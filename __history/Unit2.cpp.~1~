@@ -1,0 +1,191 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit2.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm2 *Form2;
+//---------------------------------------------------------------------------
+__fastcall TForm2::TForm2(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void burbuja(int &n)
+{
+	if (n >= 10)
+	{
+		int d = n % 10;
+		n = n / 10;
+		burbuja(n);
+		int d2 = n % 10;
+		n = n / 10;
+		if (d < d2) n = (n * 10 + d2) * 10 + d;
+		else n = (n * 10 + d) * 10 + d2;
+	}
+}
+void ordBurbuja(int &n)
+{
+	if (n >= 10)
+	{
+		burbuja(n);
+		int d = n % 10;
+		n = n / 10;
+		ordBurbuja(n);
+		n = n * 10 + d;
+	}
+}
+void __fastcall TForm2::ORDENAMIENTOBURBUJA1Click(TObject *Sender)
+{
+	int n = StrToInt(E1->Text);
+	ordBurbuja(n);
+	E2->Text = n;
+}
+//---------------------------------------------------------------------------
+void unirDosNros(int n,int n2,int &z)
+{
+	if (n2 < 10)
+	{
+		z = n * 10 + n2;
+	}
+	else
+	{
+		int d = n2 % 10;
+		n2 = n2 / 10;
+		unirDosNros(n, n2, z);
+		z = (z * 10) + d;
+	}
+}
+void __fastcall TForm2::UNIR2NUMEROS1Click(TObject *Sender)
+{
+	int n = StrToInt(E1->Text);
+	int n2 = StrToInt(InputBox("Ingrese N2 : ","",""));
+	int z = 0;
+	unirDosNros(n, n2, z);
+	E2->Text = z;
+}
+//---------------------------------------------------------------------------
+String literal(int n)
+{
+	String lit = "";
+	if (n > 0)
+	{
+		double d = n % 10;
+		lit = literal(n/10);
+		double s = d * ((pow(10,d) - 1) / 9);
+		lit = lit + FloatToStr(s);
+	}
+	return lit;
+}
+void __fastcall TForm2::CADENASLITERAL1Click(TObject *Sender)
+{
+	int n = StrToInt(E1->Text);
+	E2->Text = literal(n);
+}
+//---------------------------------------------------------------------------
+//separar pares e impares de un numero
+void separarParesImpares(int z, int &x, int &y)
+{
+	if(z > 0)
+	{
+		byte a = z % 10;
+		separarParesImpares(z/10, x, y);
+		if(a % 2 == 0)
+		{
+			x = x * 10 + a;
+		}
+		else
+		{
+			y = y * 10 + a;
+		}
+	}
+}
+void __fastcall TForm2::SEPARARPARESEIMPARES1Click(TObject *Sender)
+{
+	int z = StrToInt(E1->Text);
+	int x = 0;
+	int y = 0;
+	separarParesImpares(z, x, y);
+	E2->Text = String(z) + " pares: "+ String(x) + " impares: "+ String(y);
+}
+//---------------------------------------------------------------------------
+// V-> 234, 1221, 645, 7 => x -> 7514
+int intVector(TStringGrid*V, double n)
+{
+	double x = 0;
+	if (n > 0)
+	{
+		x = (StrToInt(V->Cells[n-1][0]) % 10) * pow(10, n - 1) + intVector(V, n - 1);
+	}
+	return x;
+}
+void __fastcall TForm2::ULTIMODIGITOVECTORANATURAL1Click(TObject *Sender)
+{
+	ShowMessage(intVector(SG2, SG2->ColCount));
+}
+//---------------------------------------------------------------------------
+// mostrar  x -> 3461  =>  3,  34,  346,  3461
+void mostrarSerie(int x)
+{
+	if (x > 0)
+	{
+		mostrarSerie(x/10);
+		ShowMessage(x);
+	}
+}
+void __fastcall TForm2::N346133434634611Click(TObject *Sender)
+{
+	int x = StrToInt(InputBox("", "num= ", ""));
+	mostrarSerie(x);
+}
+//---------------------------------------------------------------------------
+//Programa que elimina los dígitos pares de un número
+void EliminarPares(Cardinal &n)
+{
+	if (n < 10)
+	{
+		if (n % 2 == 0) n = 0;
+	}
+	else
+	{
+		byte d;
+		d = n % 10;
+		n = n / 10;
+		EliminarPares(n);
+		if (d % 2 == 1) n = n * 10 + d;
+	}
+}
+void __fastcall TForm2::ELIMINARDIGITOSPARESDEUNNUMERO1Click(TObject *Sender)
+{
+	Cardinal n = StrToInt(InputBox("ELIMINAR DIGITOS PARES","Digite un número: ",""));
+	EliminarPares(n);
+	ShowMessage(n);
+}
+//---------------------------------------------------------------------------
+// cad -> "hola23 que tal 47" => 2347
+String num = "0123456789";
+Cardinal cargarNumeros(String cad)
+{
+	int x = 0;
+	byte n  = cad.Length();
+	if (cad != "")
+	{
+		wchar_t z = cad[n];
+		cad.Delete(n , 1);
+		x = cargarNumeros(cad);
+		if (num.Pos(z) > 0)
+		{
+			x = (x * 10) + StrToInt(z);
+		}
+	}
+	return x;
+}
+void __fastcall TForm2::DEVOLVERNUMEROSDEUNACADENA1Click(TObject *Sender)
+{
+	String cad = InputBox("INGRESE CADENA","cad= ","");
+	ShowMessage(cargarNumeros(cad));
+}
+//---------------------------------------------------------------------------

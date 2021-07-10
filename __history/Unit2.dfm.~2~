@@ -1,0 +1,339 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 405
+  ClientWidth = 736
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 145
+    Top = 8
+    Width = 360
+    Height = 32
+    Caption = 'MODELOS EXAMEN RESUELTOS'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Consolas'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 49
+    Width = 108
+    Height = 19
+    Caption = 'INGRESE DATO'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 35
+    Top = 79
+    Width = 81
+    Height = 19
+    Caption = 'RESULTADO'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 62
+    Top = 112
+    Width = 54
+    Height = 19
+    Caption = 'VECTOR'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 62
+    Top = 151
+    Width = 54
+    Height = 19
+    Caption = 'MATRIZ'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+  end
+  object E1: TEdit
+    Left = 122
+    Top = 46
+    Width = 554
+    Height = 27
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object E2: TEdit
+    Left = 122
+    Top = 79
+    Width = 554
+    Height = 27
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object SG2: TStringGrid
+    Left = 122
+    Top = 112
+    Width = 554
+    Height = 33
+    DefaultColWidth = 100
+    DefaultRowHeight = 30
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object SG1: TStringGrid
+    Left = 122
+    Top = 151
+    Width = 554
+    Height = 194
+    DefaultColWidth = 30
+    DefaultRowHeight = 30
+    FixedCols = 0
+    FixedRows = 0
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object MainMenu1: TMainMenu
+    Left = 80
+    Top = 192
+    object ENTEROS1: TMenuItem
+      Caption = 'ENTEROS'
+      object ORDENAMIENTOBURBUJA1: TMenuItem
+        Caption = 'ORDENAMIENTO BURBUJA'
+        OnClick = ORDENAMIENTOBURBUJA1Click
+      end
+      object UNIR2NUMEROS1: TMenuItem
+        Caption = 'UNIR  2  NUMEROS'
+        OnClick = UNIR2NUMEROS1Click
+      end
+      object CADENASLITERAL1: TMenuItem
+        Caption = 'CADENAS LITERAL'
+        OnClick = CADENASLITERAL1Click
+      end
+      object SEPARARPARESEIMPARES1: TMenuItem
+        Caption = 'SEPARAR PARES E IMPARES'
+        OnClick = SEPARARPARESEIMPARES1Click
+      end
+      object ULTIMODIGITOVECTORANATURAL1: TMenuItem
+        Caption = 'ULTIMO DIGITO VECTOR A NATURAL'
+        OnClick = ULTIMODIGITOVECTORANATURAL1Click
+      end
+      object N346133434634611: TMenuItem
+        Caption = '3461 = 3 34  346  3461'
+        OnClick = N346133434634611Click
+      end
+      object ELIMINARDIGITOSPARESDEUNNUMERO1: TMenuItem
+        Caption = 'ELIMINAR  DIGITOS PARES  DE  UN NUMERO'
+        OnClick = ELIMINARDIGITOSPARESDEUNNUMERO1Click
+      end
+      object DEVOLVERNUMEROSDEUNACADENA1: TMenuItem
+        Caption = 'DEVOLVER NUMEROS DE UNA CADENA'
+        OnClick = DEVOLVERNUMEROSDEUNACADENA1Click
+      end
+    end
+    object CADENAS1: TMenuItem
+      Caption = 'CADENAS'
+      object PALABRAMASLARGA1: TMenuItem
+        Caption = 'PALABRA MAS LARGA'
+        OnClick = PALABRAMASLARGA1Click
+      end
+      object ELIMINARPRIMERALETRA1: TMenuItem
+        Caption = 'ELIMINAR PRIMERA LETRA'
+        OnClick = ELIMINARPRIMERALETRA1Click
+      end
+      object PRIMERALETRADECADAPOSICIONDELVECTOR1: TMenuItem
+        Caption = 'PRIMERA LETRA DE CADA POSICION DEL VECTOR'
+        OnClick = PRIMERALETRADECADAPOSICIONDELVECTOR1Click
+      end
+      object CANTIDADDECARACTERENUNACADENA1: TMenuItem
+        Caption = 'CANTIDAD DE CARACTER EN UNA  CADENA'
+        OnClick = CANTIDADDECARACTERENUNACADENA1Click
+      end
+      object INVERTIRUNACADENA1: TMenuItem
+        Caption = 'INVERTIR UNA CADENA'
+        OnClick = INVERTIRUNACADENA1Click
+      end
+      object ELIMINARVOCALESDEUNACADENA1: TMenuItem
+        Caption = 'ELIMINAR VOCALES DE UNA CADENA'
+        OnClick = ELIMINARVOCALESDEUNACADENA1Click
+      end
+      object SEPARARVOCALESYCONSONANTESDEUNACADENA1: TMenuItem
+        Caption = 'SEPARAR VOCALES Y CONSONANTES DE UNA CADENA'
+        OnClick = SEPARARVOCALESYCONSONANTESDEUNACADENA1Click
+      end
+    end
+    object VECTORES1: TMenuItem
+      Caption = 'VECTORES'
+      object SOLOVOCALESDEPALABRASENUNVECTOR1: TMenuItem
+        Caption = 'SOLO  VOCALES DE PALABRAS EN UN  VECTOR'
+        OnClick = SOLOVOCALESDEPALABRASENUNVECTOR1Click
+      end
+      object CARGARVECTOR1: TMenuItem
+        Caption = 'CARGAR VECTOR'
+        OnClick = CARGARVECTOR1Click
+      end
+      object CARGARVOCALESDECADENAS1: TMenuItem
+        Caption = 'CARGAR VOCALES DE CADENAS'
+        OnClick = CARGARVOCALESDECADENAS1Click
+      end
+      object CARGARVECTORCONCADENAS1: TMenuItem
+        Caption = 'CARGAR VECTOR CON CADENAS'
+        OnClick = CARGARVECTORCONCADENAS1Click
+      end
+      object PRIMERLETRADEPALABRAENUNVECTOR1: TMenuItem
+        Caption = 'PRIMER LETRA DE PALABRA EN UN  VECTOR'
+        OnClick = PRIMERLETRADEPALABRAENUNVECTOR1Click
+      end
+      object CARGARNUMEROSDECADENAENUNVECTOR1: TMenuItem
+        Caption = 'CARGAR NUMEROS DE CADENA EN UN VECTOR'
+        OnClick = CARGARNUMEROSDECADENAENUNVECTOR1Click
+      end
+      object CARGARSERIEENUNVECTOR: TMenuItem
+        Caption = 'CARGAR SERIE EN UN  VECTOR'
+        OnClick = CARGARSERIEENUNVECTORClick
+      end
+      object CARGARVOCALESDECADENAS21: TMenuItem
+        Caption = 'CARGAR VOCALES DE CADENAS 2'
+        OnClick = CARGARVOCALESDECADENAS21Click
+      end
+      object SUMARELEMENTOS1: TMenuItem
+        Caption = 'SUMAR ELEMENTOS'
+        OnClick = SUMARELEMENTOS1Click
+      end
+      object CONVERTIRNUMEROENVECTOR1: TMenuItem
+        Caption = 'CONVERTIR NUMERO EN VECTOR'
+        OnClick = CONVERTIRNUMEROENVECTOR1Click
+      end
+      object SUMADEVECTORDESDEPOSICIONINICIALHASTAPOSICIONFINAL1: TMenuItem
+        Caption = 'SUMA DE VECTOR DESDE POSICION INICIAL HASTA POSICION FINAL'
+        OnClick = SUMADEVECTORDESDEPOSICIONINICIALHASTAPOSICIONFINAL1Click
+      end
+      object CARGARVECTOR21: TMenuItem
+        Caption = 'CARGAR VECTOR 2'
+        OnClick = CARGARVECTOR21Click
+      end
+      object DEVOLVERELMAYORYELMENORDELOSELEMENTOSDELVECTOR1: TMenuItem
+        Caption = 'DEVOLVER EL MAYOR Y EL MENOR DE LOS ELEMENTOS DEL VECTOR'
+        OnClick = DEVOLVERELMAYORYELMENORDELOSELEMENTOSDELVECTOR1Click
+      end
+      object CARGARDIGITOSREPETIDOS1: TMenuItem
+        Caption = 'CARGAR DIGITOS REPETIDOS'
+        OnClick = CARGARDIGITOSREPETIDOS1Click
+      end
+    end
+    object MATRICES1: TMenuItem
+      Caption = 'MATRICES'
+      object MATRIZVIBORA11: TMenuItem
+        Caption = 'MATRIZ VIBORA 1'
+        OnClick = MATRIZVIBORA11Click
+      end
+      object MATRIZVIBORA21: TMenuItem
+        Caption = 'MATRIZ VIBORA 2'
+        OnClick = MATRIZVIBORA21Click
+      end
+      object MATRIZVIBORA31: TMenuItem
+        Caption = 'MATRIZ VIBORA 3'
+        OnClick = MATRIZVIBORA31Click
+      end
+      object MATRIZVIBORA41: TMenuItem
+        Caption = 'MATRIZ VIBORA 4'
+        OnClick = MATRIZVIBORA41Click
+      end
+      object MATRIZEXAMEN11: TMenuItem
+        Caption = 'MATRIZ  EXAMEN 1'
+        OnClick = MATRIZEXAMEN11Click
+      end
+      object MATRIZEXAMEN21: TMenuItem
+        Caption = 'MATRIZ  EXAMEN 2'
+        OnClick = MATRIZEXAMEN21Click
+      end
+      object MATRIZINFERIOR1: TMenuItem
+        Caption = 'MATRIZ INFERIOR'
+        OnClick = MATRIZINFERIOR1Click
+      end
+      object MATRIZSERIENATURAL1: TMenuItem
+        Caption = 'MATRIZ  SERIE NATURAL'
+        OnClick = MATRIZSERIENATURAL1Click
+      end
+      object MATRIZINFERIOR21: TMenuItem
+        Caption = 'MATRIZ INFERIOR 2'
+        OnClick = MATRIZINFERIOR21Click
+      end
+      object MATRIZFIBBONACCI1: TMenuItem
+        Caption = 'MATRIZ  FIBBONACCI'
+        OnClick = MATRIZFIBBONACCI1Click
+      end
+      object MATRIZCOMUN1: TMenuItem
+        Caption = 'MATRIZ COMUN'
+        OnClick = MATRIZCOMUN1Click
+      end
+      object MATRIZMAGICA1: TMenuItem
+        Caption = 'MATRIZ MAGICA'
+        OnClick = MATRIZMAGICA1Click
+      end
+      object MATRIZSUPERIOR11: TMenuItem
+        Caption = 'MATRIZ SUPERIOR 1'
+        OnClick = MATRIZSUPERIOR11Click
+      end
+      object MATRIZENFORMADEL1: TMenuItem
+        Caption = 'MATRIZ EN FORMA DE L'
+        OnClick = MATRIZENFORMADEL1Click
+      end
+      object MATRIZTRIANGULARSUPERIORIZQUIERDA1: TMenuItem
+        Caption = 'MATRIZ  TRIANGULAR SUPERIOR IZQUIERDA'
+        OnClick = MATRIZTRIANGULARSUPERIORIZQUIERDA1Click
+      end
+      object CONSONANTESENUNAMATRIZ1: TMenuItem
+        Caption = 'CONSONANTES EN UNA MATRIZ'
+        OnClick = CONSONANTESENUNAMATRIZ1Click
+      end
+    end
+  end
+end

@@ -1,0 +1,136 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit2H
+#define Unit2H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Grids.hpp>
+#include <Vcl.Menus.hpp>
+//---------------------------------------------------------------------------
+class TForm2 : public TForm
+{
+__published:	// IDE-managed Components
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TEdit *E1;
+	TEdit *E2;
+	TStringGrid *SG2;
+	TLabel *Label4;
+	TStringGrid *SG1;
+	TLabel *Label5;
+	TMainMenu *MainMenu1;
+	TMenuItem *ENTEROS1;
+	TMenuItem *CADENAS1;
+	TMenuItem *VECTORES1;
+	TMenuItem *MATRICES1;
+	TMenuItem *ORDENAMIENTOBURBUJA1;
+	TMenuItem *UNIR2NUMEROS1;
+	TMenuItem *CADENASLITERAL1;
+	TMenuItem *SEPARARPARESEIMPARES1;
+	TMenuItem *ULTIMODIGITOVECTORANATURAL1;
+	TMenuItem *N346133434634611;
+	TMenuItem *ELIMINARDIGITOSPARESDEUNNUMERO1;
+	TMenuItem *DEVOLVERNUMEROSDEUNACADENA1;
+	TMenuItem *PALABRAMASLARGA1;
+	TMenuItem *ELIMINARPRIMERALETRA1;
+	TMenuItem *PRIMERALETRADECADAPOSICIONDELVECTOR1;
+	TMenuItem *CANTIDADDECARACTERENUNACADENA1;
+	TMenuItem *INVERTIRUNACADENA1;
+	TMenuItem *ELIMINARVOCALESDEUNACADENA1;
+	TMenuItem *SEPARARVOCALESYCONSONANTESDEUNACADENA1;
+	TMenuItem *SOLOVOCALESDEPALABRASENUNVECTOR1;
+	TMenuItem *CARGARVECTOR1;
+	TMenuItem *CARGARVOCALESDECADENAS1;
+	TMenuItem *CARGARVECTORCONCADENAS1;
+	TMenuItem *PRIMERLETRADEPALABRAENUNVECTOR1;
+	TMenuItem *CARGARNUMEROSDECADENAENUNVECTOR1;
+	TMenuItem *CARGARSERIEENUNVECTOR;
+	TMenuItem *CARGARVOCALESDECADENAS21;
+	TMenuItem *SUMARELEMENTOS1;
+	TMenuItem *CONVERTIRNUMEROENVECTOR1;
+	TMenuItem *SUMADEVECTORDESDEPOSICIONINICIALHASTAPOSICIONFINAL1;
+	TMenuItem *CARGARVECTOR21;
+	TMenuItem *DEVOLVERELMAYORYELMENORDELOSELEMENTOSDELVECTOR1;
+	TMenuItem *CARGARDIGITOSREPETIDOS1;
+	TMenuItem *MATRIZVIBORA11;
+	TMenuItem *MATRIZVIBORA21;
+	TMenuItem *MATRIZVIBORA31;
+	TMenuItem *MATRIZVIBORA41;
+	TMenuItem *MATRIZEXAMEN11;
+	TMenuItem *MATRIZEXAMEN21;
+	TMenuItem *MATRIZINFERIOR1;
+	TMenuItem *MATRIZSERIENATURAL1;
+	TMenuItem *MATRIZINFERIOR21;
+	TMenuItem *MATRIZFIBBONACCI1;
+	TMenuItem *MATRIZCOMUN1;
+	TMenuItem *MATRIZMAGICA1;
+	TMenuItem *MATRIZSUPERIOR11;
+	TMenuItem *MATRIZENFORMADEL1;
+	TMenuItem *MATRIZTRIANGULARSUPERIORIZQUIERDA1;
+	TMenuItem *CONSONANTESENUNAMATRIZ1;
+	TMenuItem *M1;
+	TMenuItem *triangular1;
+	TMenuItem *hj1;
+	TMenuItem *trian21;
+	void __fastcall ORDENAMIENTOBURBUJA1Click(TObject *Sender);
+	void __fastcall UNIR2NUMEROS1Click(TObject *Sender);
+	void __fastcall CADENASLITERAL1Click(TObject *Sender);
+	void __fastcall SEPARARPARESEIMPARES1Click(TObject *Sender);
+	void __fastcall ULTIMODIGITOVECTORANATURAL1Click(TObject *Sender);
+	void __fastcall N346133434634611Click(TObject *Sender);
+	void __fastcall ELIMINARDIGITOSPARESDEUNNUMERO1Click(TObject *Sender);
+	void __fastcall DEVOLVERNUMEROSDEUNACADENA1Click(TObject *Sender);
+	void __fastcall PALABRAMASLARGA1Click(TObject *Sender);
+	void __fastcall ELIMINARPRIMERALETRA1Click(TObject *Sender);
+	void __fastcall PRIMERALETRADECADAPOSICIONDELVECTOR1Click(TObject *Sender);
+	void __fastcall CANTIDADDECARACTERENUNACADENA1Click(TObject *Sender);
+	void __fastcall INVERTIRUNACADENA1Click(TObject *Sender);
+	void __fastcall ELIMINARVOCALESDEUNACADENA1Click(TObject *Sender);
+	void __fastcall SEPARARVOCALESYCONSONANTESDEUNACADENA1Click(TObject *Sender);
+	void __fastcall SOLOVOCALESDEPALABRASENUNVECTOR1Click(TObject *Sender);
+	void __fastcall CARGARVECTOR1Click(TObject *Sender);
+	void __fastcall CARGARVOCALESDECADENAS1Click(TObject *Sender);
+	void __fastcall CARGARVECTORCONCADENAS1Click(TObject *Sender);
+	void __fastcall PRIMERLETRADEPALABRAENUNVECTOR1Click(TObject *Sender);
+	void __fastcall CARGARNUMEROSDECADENAENUNVECTOR1Click(TObject *Sender);
+	void __fastcall CARGARSERIEENUNVECTORClick(TObject *Sender);
+	void __fastcall CARGARVOCALESDECADENAS21Click(TObject *Sender);
+	void __fastcall SUMARELEMENTOS1Click(TObject *Sender);
+	void __fastcall CONVERTIRNUMEROENVECTOR1Click(TObject *Sender);
+	void __fastcall SUMADEVECTORDESDEPOSICIONINICIALHASTAPOSICIONFINAL1Click(TObject *Sender);
+	void __fastcall CARGARVECTOR21Click(TObject *Sender);
+	void __fastcall DEVOLVERELMAYORYELMENORDELOSELEMENTOSDELVECTOR1Click(TObject *Sender);
+	void __fastcall CARGARDIGITOSREPETIDOS1Click(TObject *Sender);
+	void __fastcall MATRIZVIBORA11Click(TObject *Sender);
+	void __fastcall MATRIZVIBORA21Click(TObject *Sender);
+	void __fastcall MATRIZVIBORA31Click(TObject *Sender);
+	void __fastcall MATRIZVIBORA41Click(TObject *Sender);
+	void __fastcall MATRIZEXAMEN11Click(TObject *Sender);
+	void __fastcall MATRIZEXAMEN21Click(TObject *Sender);
+	void __fastcall MATRIZINFERIOR1Click(TObject *Sender);
+	void __fastcall MATRIZSERIENATURAL1Click(TObject *Sender);
+	void __fastcall MATRIZINFERIOR21Click(TObject *Sender);
+	void __fastcall MATRIZFIBBONACCI1Click(TObject *Sender);
+	void __fastcall MATRIZCOMUN1Click(TObject *Sender);
+	void __fastcall MATRIZMAGICA1Click(TObject *Sender);
+	void __fastcall MATRIZSUPERIOR11Click(TObject *Sender);
+	void __fastcall MATRIZENFORMADEL1Click(TObject *Sender);
+	void __fastcall MATRIZTRIANGULARSUPERIORIZQUIERDA1Click(TObject *Sender);
+	void __fastcall CONSONANTESENUNAMATRIZ1Click(TObject *Sender);
+	void __fastcall triangular1Click(TObject *Sender);
+	void __fastcall hj1Click(TObject *Sender);
+	void __fastcall trian21Click(TObject *Sender);
+
+
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm2(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm2 *Form2;
+//---------------------------------------------------------------------------
+#endif

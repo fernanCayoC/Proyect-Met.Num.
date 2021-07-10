@@ -1,0 +1,150 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 546
+  ClientWidth = 867
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 320
+    Top = 127
+    Width = 22
+    Height = 34
+    Caption = 'X'
+  end
+  object Label2: TLabel
+    Left = 512
+    Top = 127
+    Width = 13
+    Height = 13
+    Caption = 'DX'
+  end
+  object Label3: TLabel
+    Left = 720
+    Top = 127
+    Width = 33
+    Height = 26
+    Caption = 'X'
+  end
+  object Button1: TButton
+    Left = 72
+    Top = 80
+    Width = 147
+    Height = 25
+    Caption = 'INSERTAR DATOS'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object StringGrid1: TStringGrid
+    Left = 40
+    Top = 159
+    Width = 209
+    Height = 120
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 291
+    Top = 80
+    Width = 75
+    Height = 25
+    Caption = 'INSERTAR X'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object StringGrid2: TStringGrid
+    Left = 291
+    Top = 157
+    Width = 73
+    Height = 120
+    TabOrder = 3
+    RowHeights = (
+      24
+      26
+      24
+      24
+      24)
+  end
+  object Button3: TButton
+    Left = 590
+    Top = 80
+    Width = 75
+    Height = 25
+    Caption = 'PASO1'
+    TabOrder = 4
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 199
+    Top = 310
+    Width = 75
+    Height = 25
+    Caption = 'PASO2'
+    TabOrder = 5
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 479
+    Top = 310
+    Width = 75
+    Height = 25
+    Caption = 'PASO3'
+    TabOrder = 6
+    OnClick = Button5Click
+  end
+  object StringGrid3: TStringGrid
+    Left = 418
+    Top = 159
+    Width = 207
+    Height = 120
+    TabOrder = 7
+  end
+  object StringGrid4: TStringGrid
+    Left = 643
+    Top = 159
+    Width = 200
+    Height = 120
+    TabOrder = 8
+  end
+  object StringGrid5: TStringGrid
+    Left = 125
+    Top = 357
+    Width = 217
+    Height = 120
+    TabOrder = 9
+    ColWidths = (
+      64
+      64
+      64
+      64
+      64)
+  end
+  object StringGrid6: TStringGrid
+    Left = 488
+    Top = 357
+    Width = 66
+    Height = 120
+    TabOrder = 10
+    RowHeights = (
+      24
+      32
+      24
+      88
+      24)
+  end
+  object Edit1: TEdit
+    Left = 329
+    Top = 24
+    Width = 112
+    Height = 25
+    TabOrder = 11
+    Text = 'METODO DE CROUT'
+  end
+end

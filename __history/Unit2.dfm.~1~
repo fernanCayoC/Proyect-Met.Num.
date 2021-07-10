@@ -1,0 +1,191 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 405
+  ClientWidth = 736
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 145
+    Top = 8
+    Width = 360
+    Height = 32
+    Caption = 'MODELOS EXAMEN RESUELTOS'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Consolas'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 49
+    Width = 108
+    Height = 19
+    Caption = 'INGRESE DATO'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 35
+    Top = 79
+    Width = 81
+    Height = 19
+    Caption = 'RESULTADO'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 62
+    Top = 112
+    Width = 54
+    Height = 19
+    Caption = 'VECTOR'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 62
+    Top = 151
+    Width = 54
+    Height = 19
+    Caption = 'MATRIZ'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+  end
+  object E1: TEdit
+    Left = 122
+    Top = 46
+    Width = 554
+    Height = 27
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object E2: TEdit
+    Left = 122
+    Top = 79
+    Width = 554
+    Height = 27
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object SG2: TStringGrid
+    Left = 122
+    Top = 112
+    Width = 554
+    Height = 33
+    DefaultColWidth = 100
+    DefaultRowHeight = 30
+    FixedCols = 0
+    RowCount = 1
+    FixedRows = 0
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object SG1: TStringGrid
+    Left = 122
+    Top = 151
+    Width = 554
+    Height = 194
+    DefaultColWidth = 30
+    DefaultRowHeight = 30
+    FixedCols = 0
+    FixedRows = 0
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object MainMenu1: TMainMenu
+    Left = 80
+    Top = 192
+    object ENTEROS1: TMenuItem
+      Caption = 'ENTEROS'
+      object ORDENAMIENTOBURBUJA1: TMenuItem
+        Caption = 'ORDENAMIENTO BURBUJA'
+        OnClick = ORDENAMIENTOBURBUJA1Click
+      end
+      object UNIR2NUMEROS1: TMenuItem
+        Caption = 'UNIR  2  NUMEROS'
+        OnClick = UNIR2NUMEROS1Click
+      end
+      object CADENASLITERAL1: TMenuItem
+        Caption = 'CADENAS LITERAL'
+        OnClick = CADENASLITERAL1Click
+      end
+      object SEPARARPARESEIMPARES1: TMenuItem
+        Caption = 'SEPARAR PARES E IMPARES'
+        OnClick = SEPARARPARESEIMPARES1Click
+      end
+      object ULTIMODIGITOVECTORANATURAL1: TMenuItem
+        Caption = 'ULTIMO DIGITO VECTOR A NATURAL'
+        OnClick = ULTIMODIGITOVECTORANATURAL1Click
+      end
+      object N346133434634611: TMenuItem
+        Caption = '3461 = 3 34  346  3461'
+        OnClick = N346133434634611Click
+      end
+      object ELIMINARDIGITOSPARESDEUNNUMERO1: TMenuItem
+        Caption = 'ELIMINAR  DIGITOS PARES  DE  UN NUMERO'
+        OnClick = ELIMINARDIGITOSPARESDEUNNUMERO1Click
+      end
+      object DEVOLVERNUMEROSDEUNACADENA1: TMenuItem
+        Caption = 'DEVOLVER NUMEROS DE UNA CADENA'
+        OnClick = DEVOLVERNUMEROSDEUNACADENA1Click
+      end
+    end
+    object CADENAS1: TMenuItem
+      Caption = 'CADENAS'
+    end
+    object VECTORES1: TMenuItem
+      Caption = 'VECTORES'
+    end
+    object MATRICES1: TMenuItem
+      Caption = 'MATRICES'
+    end
+  end
+end
